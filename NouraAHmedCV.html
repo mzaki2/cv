@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Noura Piloot, Approval Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            font-family: 'Segoe UI', 'Arial', 'Calibri', sans-serif;
+            padding: 40px 20px;
+            line-height: 1.45;
+        }
+
+        /* PDF page size */
+        .cv-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 40px 45px;
+        }
+
+        /* Header */
+        .header {
+            border-bottom: 3px solid #0f3b2c;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .name-title h1 {
+            font-size: 32px;
+            color: #0f3b2c;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .name-title p {
+            font-size: 18px;
+            color: #2d6a4f;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 14px;
+            color: #1e293b;
+        }
+
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+
+        /* Badge & summary */
+        .summary {
+            background: #f1f8f4;
+            padding: 18px 22px;
+            border-radius: 14px;
+            margin-bottom: 28px;
+            border-left: 5px solid #0f3b2c;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f3b2c;
+            border-bottom: 2px solid #cbd5e1;
+            padding-bottom: 6px;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Experience items */
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .job-date {
+            font-weight: 600;
+            color: #2c5f2d;
+            background: #e9f5e9;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .company {
+            font-weight: 600;
+            color: #2d6a4f;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .duty-list {
+            list-style-type: none;
+            margin-top: 12px;
+        }
+
+        .duty-list li {
+            margin-bottom: 12px;
+            padding-left: 22px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.45;
+            color: #1e293b;
+        }
+
+        .duty-list li strong {
+            color: #0f3b2c;
+            background: #eef2ff;
+            padding: 1px 6px;
+            border-radius: 12px;
+            font-size: 12.5px;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .duty-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #0f3b2c;
+            font-weight: bold;
+        }
+
+        /* Two column skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 25px;
+            margin-top: 8px;
+        }
+
+        .skill-cat {
+            font-weight: 700;
+            color: #0f3b2c;
+            margin-bottom: 6px;
+        }
+
+        .skill-items {
+            font-size: 14px;
+            color: #334155;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 15px 0 5px;
+        }
+
+        .badge {
+            background: #eef2ff;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #1e3a8a;
+        }
+
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 12px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 18px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+            .cv-container {
+                box-shadow: none;
+                padding: 0.3in;
+                max-width: 100%;
+            }
+            .badge {
+                background: #f0f0f0;
+                print-color-adjust: exact;
+            }
+            .summary {
+                background: #f9fafb;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="cv-container">
+    <!-- HEADER -->
+    <div class="header">
+        <div class="name-title">
+            <h1>Ms. Noura Piloot</h1>
+            <p>Medical Approvals & Pre-Authorization Specialist</p>
+            <p style="font-size: 14px; margin-top: 6px; color:#25633b;">🇵🇭 Filipino | 10+ years in KSA · Andalusia Group (Jeddah)</p>
+        </div>
+        <div class="contact-info">
+            <p>📍 Jeddah, Saudi Arabia</p>
+            <p>📞 +966 55 427 9623</p>
+            <p>✉️ hannasaikail9@icloud.com</p>
+        </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="summary">
+        <p style="font-weight:500;">✔ <strong>10+ years of focused expertise</strong> at <strong>Andalusia Group (Jeddah, 2014–Present)</strong> — Filipino national with fluent English & Arabic (speaking). End-to-end approvals leader: pre-auth, claims prep, NPHIES, policy creation (terms & limits), HIS platform (DotCare). Daily review of patient services & approval status to ensure zero revenue leakage.</p>
+    </div>
+
+    <!-- EXPERIENCE (ONLY ANDALUSIA GROUP - JEDDAH) -->
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        <div style="margin-bottom: 20px;">
+            <div class="job-header">
+                <span class="job-title">Senior Approvals Specialist</span>
+                <span class="job-date">Jan 2018 – Present</span>
+            </div>
+            <div class="job-header" style="margin-top: 5px;">
+                <span class="job-title">Approvals Specialist</span>
+                <span class="job-date">May 2014 – Dec 2017</span>
+            </div>
+            <div class="company">Andalusia Group for Medical Services | Jeddah, KSA</div>
+            
+            <ul class="duty-list">
+                <li><strong>✅ Pre-Authorization</strong> – Process daily pre-auth for OPD, IPD, Dental, ER; achieve 94% first-time approval; reduce turnaround from 6h → under 3h.</li>
+                <li><strong>📄 Claims Preparation</strong> – Prepare & submit clean claims (ICD-10/CPT), handle resubmissions & reconsiderations; recovered SAR 2.8M in 2023.</li>
+                <li><strong>🖥️ HIS System (DotCare)</strong> – Daily use of DotCare for eligibility, approval tracking, real-time status, and NPHIES integration.</li>
+                <li><strong>🏥 Patient Services (OPD · IPD · Dental · ER)</strong> – Manage approvals for all lines: consults, radiology, admissions, surgeries, dental procedures, emergency interventions.</li>
+                <li><strong>📋 Policy Administration</strong> – Administer existing insurance policies (co-payments, deductibles, annual limits, exclusions) for Bupa, Tawuniya, MedNet, GlobeMed, Allianz.</li>
+                <li><strong>📝 Create Policies with Terms & Limits</strong> – Collaborate with contracting teams to design new corporate policies: define coverage limits (maternity, surgeries, pharmacy), co-insurance %, waiting periods; contributed to 12+ new agreements (2022-2023).</li>
+                <li><strong>🇸🇦 NPHIES Experience (Super-user)</strong> – Daily electronic pre-auth & claims via NPHIES platform; lead trainer for 10+ colleagues; reduced rejections by 35% after migration.</li>
+                <li><strong>🔍 Review Patient Services & Approval Status</strong> – Daily audit of services vs. approval status; generate weekly reports on approval rates, denials, and policy limit risks; reduced unapproved services by 60%.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section">
+        <div class="section-title">Key Achievements (Andalusia Group - Jeddah)</div>
+        <div class="badge-list">
+            <span class="badge">🏆 Best Approvals Specialist 2022</span>
+            <span class="badge">📈 NPHIES Transition Lead – 35% fewer rejections</span>
+            <span class="badge">📑 12 new corporate policies created</span>
+            <span class="badge">⏱️ 60% drop in unapproved services</span>
+        </div>
+    </div>
+
+    <!-- CORE SKILLS + TECHNICAL (GRID) -->
+    <div class="section">
+        <div class="section-title">Core & Technical Competencies</div>
+        <div class="skills-grid">
+            <div>
+                <div class="skill-cat">📌 Pre-auth & Claims</div>
+                <div class="skill-items">Pre-authorization (OPD/IPD/Dental/ER) · Claims resubmission · Medical coding (ICD-10, CPT)</div>
+                <div class="skill-cat" style="margin-top: 12px;">📋 Policy Management</div>
+                <div class="skill-items">Policy admin · Create policies with terms/limits · CCHI compliance · Co-payment & limit structures</div>
+            </div>
+            <div>
+                <div class="skill-cat">🖥️ HIS & E-Systems</div>
+                <div class="skill-items">DotCare · NPHIES (super-user) · CCHI Unified Portal · Bupa/Tawuniya/MedNet portals</div>
+                <div class="skill-cat" style="margin-top: 12px;">📊 Audit & Reporting</div>
+                <div class="skill-items">Review patient services vs approval status · Weekly KPI reports · Denial analysis</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="skills-grid" style="grid-template-columns: repeat(3,1fr);">
+            <div><strong>🇵🇭 Tagalog</strong> (Native)</div>
+            <div><strong>🇬🇧 English</strong> (Fluent – medical/business)</div>
+            <div><strong>🇸🇦 Arabic</strong> (Speaking only)</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        📄 References available upon request · Updated: June 2026 · Andalusia Group, Jeddah (2014–present)
+    </div>
+</div>
+</body>
+</html>
