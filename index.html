@@ -139,22 +139,22 @@
         .duty-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 14px 28px;
+            gap: 12px 28px;
             margin-top: 12px;
         }
 
         .duty-item {
-            font-size: 14px;
+            font-size: 13.5px;
             color: #1e293b;
             display: flex;
             align-items: flex-start;
             gap: 10px;
-            padding: 4px 0;
+            padding: 3px 0;
         }
 
         .duty-icon {
-            font-size: 18px;
-            min-width: 28px;
+            font-size: 16px;
+            min-width: 24px;
         }
 
         .duty-text strong {
@@ -179,31 +179,40 @@
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
         }
 
         .skill-tag {
             background: #f1f5f9;
-            padding: 6px 14px;
+            padding: 5px 14px;
             border-radius: 40px;
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 500;
             color: #1e293b;
+        }
+
+        .skill-tag-highlight {
+            background: #1a4d3a;
+            color: white;
+            padding: 5px 14px;
+            border-radius: 40px;
+            font-size: 12.5px;
+            font-weight: 500;
         }
 
         .achievements-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 14px;
+            gap: 12px;
             margin: 15px 0 5px;
         }
 
         .achievement-card {
             background: linear-gradient(115deg, #f8fafc, #ffffff);
             border: 1px solid #e2edf2;
-            padding: 10px 20px;
+            padding: 8px 18px;
             border-radius: 60px;
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 500;
             color: #1a4d3a;
         }
@@ -232,6 +241,14 @@
             padding-top: 22px;
         }
 
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 14px;
+        }
+
         @media print {
             body {
                 background: white;
@@ -243,6 +260,11 @@
             }
             .cv-inner {
                 padding: 0.2in;
+            }
+            .skill-tag-highlight {
+                background: #1a4d3a !important;
+                color: white !important;
+                print-color-adjust: exact;
             }
         }
 
@@ -266,22 +288,22 @@
         <div class="header">
             <div class="name-title">
                 <h1>Noura Piloot</h1>
-                <p style="font-size: 17px; font-weight: 500; color: #2c5f4a;">Medical Approvals & Pre‑Authorization Specialist</p>
+                <p style="font-size: 17px; font-weight: 500; color: #2c5f4a;">Approval & Pre‑Authorization Specialist</p>
                 <div class="badge-exp">🇵🇭 Filipino · 10+ years KSA · Andalusia Group (Jeddah)</div>
             </div>
             <div class="contact-info">
                 <p>📍 Jeddah, Saudi Arabia</p>
                 <p>📞 +966 55 427 9623</p>
-                <p>✉️ Hannaranna25@gmail.com</p>
+                <p>✉️ hannasaikail9@icloud.com</p>
             </div>
         </div>
 
-        <!-- SUMMARY -->
+        <!-- SUMMARY - tailored to job post -->
         <div class="summary">
-            <p style="font-size: 15px; font-weight: 500; color: #1e2f3c;">✔ <strong>10+ years of hospital-based experience</strong> at Andalusia Group – Jeddah (2014–Present). Proven track record in <strong>fixing approval issues, resolving rejections, and fast adaptation</strong> to new HIS systems (DotCare) and insurance platforms. Expert in <strong>making requests, checking requests, and exporting data</strong> across major insurance portals including <strong>Wassel, Bupa, and TCS</strong>. Skilled in <strong>report generation, decision support, following up until approval, bridging communication between insurance and medical teams, code review, shadow billing, and price list compliance</strong>.</p>
+            <p style="font-size: 14.5px; font-weight: 500; color: #1e2f3c;">✔ <strong>10+ years of hospital-based preauthorization experience</strong> at Andalusia Group – Jeddah. Expert in <strong>CHI Preauthorization Policy, NPHIES standards, and payer coverage protocols</strong>. Proven track record in <strong>rejection management, root cause analysis, and physician guidance</strong> to prevent denials. Strong <strong>clinical judgment</strong> with ability to validate medical necessity and review clinical documentation (MDS, progress notes, diagnostics). Skilled in <strong>HIS/NPHIES queue monitoring, daily discharge reconciliation, and rejection dashboard reporting</strong>. Fast learner with <strong>excellent communication</strong> bridging insurance and medical teams.</p>
         </div>
 
-        <!-- EXPERIENCE with expanded text -->
+        <!-- EXPERIENCE -->
         <div class="section">
             <div class="section-title"><span></span> Professional Experience</div>
             <div class="job-header">
@@ -295,73 +317,107 @@
             <div class="company">🏥 Andalusia Group for Medical Services | Jeddah, KSA</div>
             
             <div class="duty-grid">
+                <!-- CHI & NPHIES Compliance -->
                 <div class="duty-item">
-                    <div class="duty-icon">🏥</div>
-                    <div class="duty-text"><strong>Hospital Environment Experience</strong> – Deep understanding of clinical workflows, doctor-nurse coordination, and front-desk operations. Work closely with physicians to ensure medical necessity documentation supports approval decisions.</div>
+                    <div class="duty-icon">📋</div>
+                    <div class="duty-text"><strong>CHI & NPHIES Compliance</strong> – Ensure full adherence to CHI Preauthorization Policy, NPHIES standards, and individual payer coverage protocols. Support NPHIES downtime contingency procedures.</div>
                 </div>
                 <div class="duty-item">
-                    <div class="duty-icon">🔧</div>
-                    <div class="duty-text"><strong>Fixing Approval Issues</strong> – Investigate and resolve complex approval rejections by analyzing denial codes, communicating with insurance medical directors, and correcting documentation. Successfully overturned <strong>200+ denied cases in 2023</strong>.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">⚠️</div>
-                    <div class="duty-text"><strong>Dealing with Approval Issues</strong> – Handle daily approval challenges including expired authorizations, partial approvals, policy limit exhaustion, and emergency retro-authorizations. <strong>Escalate critical cases</strong> to management with solution plans.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">📊</div>
-                    <div class="duty-text"><strong>Making Reports & Helping in Decisions</strong> – Generate <strong>daily, weekly, and monthly reports</strong> on approval rates, denial trends, pending cases, and policy utilization. Provide <strong>data-driven recommendations</strong> to management for process improvements and <strong>strategic decisions</strong> on resource allocation.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">📞</div>
-                    <div class="duty-text"><strong>Follow-Up Until Approval Received</strong> – Diligently <strong>track and follow up</strong> on every pending request through daily calls, emails, and portal checks. Maintain <strong>zero lost requests</strong> and ensure approvals are received before service delivery.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">🤝</div>
-                    <div class="duty-text"><strong>Communication with Insurance & Medical Teams</strong> – Act as <strong>primary liaison</strong> between insurance companies and hospital medical teams. Translate clinical terminology for insurers and communicate approval requirements to physicians, <strong>speeding up the approval process</strong> by 40%.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">🔢</div>
-                    <div class="duty-text"><strong>Reviewing Codes & Shadow Billing</strong> – Conduct <strong>pre-submission audits</strong> of ICD-10 and CPT codes to ensure accuracy. Identify <strong>shadow billing discrepancies</strong> between approved services and actual charges, preventing revenue leakage.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">💰</div>
-                    <div class="duty-text"><strong>Follow Agreed Price List</strong> – Ensure all approved services comply with <strong>contracted price lists</strong> between Andalusia Group and each payer. Flag and resolve any price mismatch before claims submission.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">🌐</div>
-                    <div class="duty-text"><strong>Insurance Portals – Make Requests</strong> – Proficient in <strong>creating and submitting pre-authorization requests</strong> via <strong>Wassel Portal, Bupa Portal, and TCS Portal</strong>. Ensure all required clinical documents are attached before submission.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">🔍</div>
-                    <div class="duty-text"><strong>Insurance Portals – Check Requests</strong> – Daily <strong>monitoring and tracking</strong> of approval request statuses across Wassel, Bupa, and TCS. Follow up on pending requests and escalate delayed responses to insurers.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">📊</div>
-                    <div class="duty-text"><strong>Export Data from Portals</strong> – <strong>Extract and export</strong> approval data, rejection reports, and transaction logs from Wassel, Bupa, and TCS portals for <strong>monthly KPI analysis, audit trails, and management reporting</strong>.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">🖥️</div>
-                    <div class="duty-text"><strong>HIS Systems (DotCare)</strong> – Full proficiency in <strong>DotCare HIS</strong> for patient registration, eligibility verification, real-time approval tracking, and seamless NPHIES integration. Trained 15+ staff members on DotCare workflows.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">⚡</div>
-                    <div class="duty-text"><strong>Fast Learning Ability</strong> – Quickly mastered <strong>NPHIES platform within 2 weeks</strong> of rollout and became departmental super-user. Adapt to new insurance portals, policy updates, and CCHI regulations ahead of deadlines.</div>
-                </div>
-                <div class="duty-item">
-                    <div class="duty-icon">✅</div>
-                    <div class="duty-text"><strong>Pre-Authorization</strong> – Process 150+ daily pre-auth for OPD, IPD, Dental, ER. Achieve <strong>94% first-time approval rate</strong>; reduce turnaround from 6h → under 3h through prioritization.</div>
+                    <div class="duty-icon">🚫</div>
+                    <div class="duty-text"><strong>Prevent Unauthorized Services</strong> – Strictly prevent unauthorized, uncovered, or non-contracted services from being initiated through rigorous eligibility checks.</div>
                 </div>
                 <div class="duty-item">
                     <div class="duty-icon">📄</div>
-                    <div class="duty-text"><strong>Claims Preparation</strong> – Prepare clean claims with ICD-10/CPT codes. Handle resubmissions & reconsiderations; <strong>recovered SAR 2.8M</strong> in previously rejected claims (2023).</div>
+                    <div class="duty-text"><strong>Clinical Documentation Review</strong> – Verify completeness of clinical documentation and MDS (Minimum Data Set) for every request. Review progress notes, diagnostics, prescriptions, and clinical justifications.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">✅</div>
+                    <div class="duty-text"><strong>Medical Necessity Validation</strong> – Validate medical necessity in alignment with evidence-based guidelines, CHI standards, and payer criteria. Ensure accurate clinical coding and scheme linkage.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">📤</div>
+                    <div class="duty-text"><strong>Escalation & Correction</strong> – Escalate incomplete or inaccurate documentation for correction prior to submission. Liaise with physicians, nurses, and roving doctors to secure approvals.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">⏱️</div>
+                    <div class="duty-text"><strong>Timely Communication</strong> – Communicate approvals, denials, and payer queries within CHI-mandated timelines. Respond to payer queries within <strong>30 minutes</strong> of receipt.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">🚨</div>
+                    <div class="duty-text"><strong>Urgent Case Escalation</strong> – Escalate urgent/high-priority cases (ER, ICU, Oncology, high-cost procedures) immediately to Preauthorization Manager.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">🖥️</div>
+                    <div class="duty-text"><strong>HIS/NPHIES Queue Monitoring</strong> – Monitor HIS/NPHIES queues to follow up on pending or queried cases in real time. Maintain updated approval status in both HIS and patient record.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">📅</div>
+                    <div class="duty-text"><strong>Discharge Reconciliation</strong> – Ensure 100% completion of approvals for all discharges within the same day. Confirm same-day discharge and high-cost cases are fully approved prior to billing.</div>
                 </div>
                 <div class="duty-item">
                     <div class="duty-icon">📝</div>
-                    <div class="duty-text"><strong>Create Policies with Terms & Limits</strong> – Collaborate with contracting teams to design corporate policies: define coverage limits, co-insurance %, waiting periods. <strong>12+ new policy agreements</strong> created (2022–2023).</div>
+                    <div class="duty-text"><strong>Documentation & Reconciliation</strong> – Document all approvals, denials, and payer communications in patient medical record. Participate in daily discharge reconciliation process.</div>
                 </div>
+                <!-- REJECTION MANAGEMENT -->
                 <div class="duty-item">
                     <div class="duty-icon">🔍</div>
-                    <div class="duty-text"><strong>Review Patient Services & Approval Status</strong> – Daily audit of rendered services vs. approval status. Generate weekly KPI reports; <strong>reduced unapproved services by 60%</strong> through proactive flagging.</div>
+                    <div class="duty-text"><strong>Rejection Review (Twice/Shift)</strong> – Review all preauthorization rejections received through NPHIES, payer portals, or HIS at least twice per shift. Categorize by cause (missing justification, duplication, non-covered service, exceeded limit, coding error, late submission).</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">📊</div>
+                    <div class="duty-text"><strong>Rejection Tracker Log</strong> – Record all rejections in Rejection Tracker Log with patient MRN, preauthorization number, payer, rejection reason, and physician name.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">🤝</div>
+                    <div class="duty-text"><strong>Physician Engagement for Rejections</strong> – Engage directly with treating physician for clarification or missing documentation. Provide constructive feedback and guidance to avoid recurrence, referencing insurer protocols, CHI guidelines, and NPHIES dataset requirements.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">⚡</div>
+                    <div class="duty-text"><strong>High-Cost Rejection Briefings</strong> – Conduct same-day briefings for rejections involving high-cost services. Resubmit corrected documentation within payer's appeal window.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">🔧</div>
+                    <div class="duty-text"><strong>Root Cause Analysis</strong> – Identify root causes for all rejections and document corrective recommendations. Distinguish between avoidable and non-avoidable rejections during end-of-day analysis.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">📈</div>
+                    <div class="duty-text"><strong>Daily Rejection Summary</strong> – Submit daily rejection summary to Preauthorization Manager covering: total rejections, avoidable vs non-avoidable ratio, high-value/repetitive patterns, breakdown by payer, physician, and service category.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">💡</div>
+                    <div class="duty-text"><strong>Corrective Actions & System Improvement</strong> – Recommend corrective actions (MDS checklist updates, justification templates, physician sessions). Collaborate with IT to improve HIS alerts (auto-flagging incomplete documentation, incorrect scheme linkage).</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">📊</div>
+                    <div class="duty-text"><strong>Weekly Rejection Dashboard</strong> – Support preparation of Weekly Rejection Dashboard: total rejection count, avoidable vs non-avoidable %, average approval turnaround time, top 10 contributing services/physicians/payers.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">📢</div>
+                    <div class="duty-text"><strong>Weekly Performance Meetings</strong> – Participate in weekly Preauthorization Group performance meetings to present rejection trends and lessons learned. Ensure transparency of all rejection cases to leadership.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">📞</div>
+                    <div class="duty-text"><strong>Insurance & Medical Team Liaison</strong> – Uphold professional communication standards. Act as primary bridge between insurance companies and medical teams, speeding up approval process by 40%.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">🛡️</div>
+                    <div class="duty-text"><strong>Continuous Compliance</strong> – Ensure continuous compliance with CHI, NPHIES, and contractual payer regulations. Report non-compliance or process deviation to Preauthorization Manager.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">✅</div>
+                    <div class="duty-text"><strong>Pre-Authorization (OPD/IPD/Dental/ER)</strong> – Process 150+ daily pre-auth requests. Achieve 94% first-time approval rate; reduce turnaround from 6h → under 3h.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">📄</div>
+                    <div class="duty-text"><strong>Claims & Coding Review</strong> – Review ICD-10/CPT codes and shadow billing discrepancies. Ensure compliance with agreed price lists and contracted rates.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">🌐</div>
+                    <div class="duty-text"><strong>Insurance Portals (Wassel/Bupa/TCS)</strong> – Expert in making requests, checking status, and exporting data from Wassel, Bupa, and TCS portals.</div>
+                </div>
+                <div class="duty-item">
+                    <div class="duty-icon">⚡</div>
+                    <div class="duty-text"><strong>Fast Learning & Adaptation</strong> – Mastered NPHIES platform within 2 weeks. Adapt quickly to new insurance portals, policy updates, and CCHI regulations.</div>
                 </div>
             </div>
         </div>
@@ -376,90 +432,123 @@
                 <div class="achievement-card">⏱️ 60% drop in unapproved services</div>
                 <div class="achievement-card">⚡ Mastered NPHIES in 2 weeks</div>
                 <div class="achievement-card">🔧 200+ denial overturns (2023)</div>
-                <div class="achievement-card">📊 Optimized data export for monthly audits</div>
                 <div class="achievement-card">🚀 40% faster approval via insurer-medical team bridge</div>
-                <div class="achievement-card">✅ Zero shadow billing discrepancies after review</div>
+                <div class="achievement-card">📊 Daily rejection summaries & dashboards</div>
             </div>
         </div>
 
-        <!-- CORE COMPETENCIES -->
+        <!-- CORE COMPETENCIES - tailored to job post -->
         <div class="section">
-            <div class="section-title"><span></span> Core & Technical Competencies</div>
+            <div class="section-title"><span></span> Core Competencies</div>
             <div class="skills-modern">
                 <div class="skill-block">
-                    <h4>🏥 Hospital & Approval Ops</h4>
+                    <h4>📋 CHI & Regulatory Compliance</h4>
                     <div class="skill-tags">
-                        <span class="skill-tag">Fixing approval rejections</span>
-                        <span class="skill-tag">Denial management</span>
-                        <span class="skill-tag">Retro-authorization</span>
-                        <span class="skill-tag">Clinical documentation review</span>
+                        <span class="skill-tag-highlight">CHI Preauthorization Policy</span>
+                        <span class="skill-tag-highlight">NPHIES Standards</span>
+                        <span class="skill-tag-highlight">Payer Coverage Protocols</span>
+                        <span class="skill-tag">NPHIES Downtime Contingency</span>
+                        <span class="skill-tag">CCHI Compliance</span>
                     </div>
                 </div>
                 <div class="skill-block">
-                    <h4>📊 Reporting & Decision Support</h4>
+                    <h4>📄 Clinical Documentation & Review</h4>
                     <div class="skill-tags">
-                        <span class="skill-tag">Daily/weekly/monthly reports</span>
-                        <span class="skill-tag">KPI analysis</span>
-                        <span class="skill-tag">Data-driven recommendations</span>
-                        <span class="skill-tag">Management decision support</span>
+                        <span class="skill-tag-highlight">MDS (Minimum Data Set)</span>
+                        <span class="skill-tag-highlight">Medical Necessity Validation</span>
+                        <span class="skill-tag-highlight">Clinical Judgment</span>
+                        <span class="skill-tag">Progress Notes Review</span>
+                        <span class="skill-tag">Diagnostics & Prescriptions</span>
                     </div>
                 </div>
                 <div class="skill-block">
-                    <h4>📞 Follow-Up & Communication</h4>
+                    <h4>🔧 Rejection Management</h4>
                     <div class="skill-tags">
-                        <span class="skill-tag">End-to-end follow-up until approval</span>
-                        <span class="skill-tag">Insurance & medical team liaison</span>
-                        <span class="skill-tag">Process acceleration</span>
-                        <span class="skill-tag">Payer negotiation</span>
+                        <span class="skill-tag-highlight">Root Cause Analysis</span>
+                        <span class="skill-tag-highlight">Avoidable vs Non-Avoidable</span>
+                        <span class="skill-tag-highlight">Rejection Tracker Log</span>
+                        <span class="skill-tag">Categorization by Cause</span>
+                        <span class="skill-tag">Appeal & Resubmission</span>
                     </div>
                 </div>
                 <div class="skill-block">
-                    <h4>🔢 Coding & Billing Review</h4>
+                    <h4>📊 Reporting & Dashboards</h4>
                     <div class="skill-tags">
-                        <span class="skill-tag">ICD-10/CPT code review</span>
-                        <span class="skill-tag">Shadow billing detection</span>
-                        <span class="skill-tag">Price list compliance</span>
-                        <span class="skill-tag">Pre-submission audit</span>
+                        <span class="skill-tag-highlight">Daily Rejection Summary</span>
+                        <span class="skill-tag-highlight">Weekly Rejection Dashboard</span>
+                        <span class="skill-tag">KPI Analysis</span>
+                        <span class="skill-tag">Data-Driven Recommendations</span>
                     </div>
                 </div>
                 <div class="skill-block">
-                    <h4>🌐 Insurance Portals</h4>
+                    <h4>🤝 Communication & Liaison</h4>
                     <div class="skill-tags">
-                        <span class="skill-tag">Wassel Portal – Make/Check/Export</span>
-                        <span class="skill-tag">Bupa Portal – Make/Check/Export</span>
-                        <span class="skill-tag">TCS Portal – Make/Check/Export</span>
-                        <span class="skill-tag">NPHIES super-user</span>
+                        <span class="skill-tag-highlight">Strong Communication</span>
+                        <span class="skill-tag-highlight">Physician Engagement</span>
+                        <span class="skill-tag">Insurance & Medical Team Bridge</span>
+                        <span class="skill-tag">Payer Query Response (30 min)</span>
                     </div>
                 </div>
                 <div class="skill-block">
-                    <h4>🖥️ HIS & E-Systems</h4>
+                    <h4>🖥️ HIS & Insurance Portals</h4>
                     <div class="skill-tags">
-                        <span class="skill-tag">DotCare (Expert)</span>
-                        <span class="skill-tag">CCHI Unified Portal</span>
-                        <span class="skill-tag">Fast learner – new systems</span>
-                        <span class="skill-tag">Data export & reporting</span>
+                        <span class="skill-tag">DotCare HIS</span>
+                        <span class="skill-tag">NPHIES Super-User</span>
+                        <span class="skill-tag">Wassel / Bupa / TCS Portals</span>
+                        <span class="skill-tag">HIS/NPHIES Queue Monitoring</span>
+                    </div>
+                </div>
+                <div class="skill-block">
+                    <h4>📋 Coding & Billing</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ICD-10 / CPT Review</span>
+                        <span class="skill-tag">Shadow Billing Detection</span>
+                        <span class="skill-tag">Scheme Linkage</span>
+                        <span class="skill-tag">Price List Compliance</span>
+                    </div>
+                </div>
+                <div class="skill-block">
+                    <h4>⚡ Operations & Escalation</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Discharge Reconciliation</span>
+                        <span class="skill-tag">Urgent Case Escalation (ER/ICU/Oncology)</span>
+                        <span class="skill-tag">High-Cost Case Management</span>
+                        <span class="skill-tag">Fast Learner</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- INSURANCE PORTALS DETAIL SECTION -->
+        <!-- INSURANCE PORTALS DETAIL -->
         <div class="section">
             <div class="section-title"><span></span> Insurance Portals Expertise</div>
             <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 5px;">
-                <div style="background: #f1f9f5; padding: 12px 20px; border-radius: 20px; flex: 1; min-width: 160px;">
+                <div style="background: #f1f9f5; padding: 12px 20px; border-radius: 20px; flex: 1; min-width: 150px;">
                     <div style="font-weight: 700; color: #1a4d3a;">🌐 Wassel Portal</div>
-                    <div style="font-size: 13px; color: #334155; margin-top: 6px;">Make requests · Check status · Export approval data</div>
+                    <div style="font-size: 13px; color: #334155; margin-top: 6px;">Make requests · Check status · Export data</div>
                 </div>
-                <div style="background: #f1f9f5; padding: 12px 20px; border-radius: 20px; flex: 1; min-width: 160px;">
+                <div style="background: #f1f9f5; padding: 12px 20px; border-radius: 20px; flex: 1; min-width: 150px;">
                     <div style="font-weight: 700; color: #1a4d3a;">🔵 Bupa Portal</div>
-                    <div style="font-size: 13px; color: #334155; margin-top: 6px;">Make requests · Check requests · Export transaction logs</div>
+                    <div style="font-size: 13px; color: #334155; margin-top: 6px;">Make/Check requests · Export logs</div>
                 </div>
-                <div style="background: #f1f9f5; padding: 12px 20px; border-radius: 20px; flex: 1; min-width: 160px;">
+                <div style="background: #f1f9f5; padding: 12px 20px; border-radius: 20px; flex: 1; min-width: 150px;">
                     <div style="font-weight: 700; color: #1a4d3a;">📁 TCS Portal</div>
-                    <div style="font-size: 13px; color: #334155; margin-top: 6px;">Make requests · Check status · Export data for audits</div>
+                    <div style="font-size: 13px; color: #334155; margin-top: 6px;">Make/Check · Export for audits</div>
+                </div>
+                <div style="background: #f1f9f5; padding: 12px 20px; border-radius: 20px; flex: 1; min-width: 150px;">
+                    <div style="font-weight: 700; color: #1a4d3a;">🇸🇦 NPHIES</div>
+                    <div style="font-size: 13px; color: #334155; margin-top: 6px;">Super-user · e-Pre-auth · Claims</div>
                 </div>
             </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="section">
+            <div class="section-title"><span></span> Education & Certifications</div>
+            <div class="edu-item"><span>🎓 Bachelor of Science in Health Services Administration</span><span>KSAU-HS, Riyadh (2010)</span></div>
+            <div class="edu-item"><span>📘 Certified Medical Insurance Professional (CMIP)</span><span>Institute of Health Care Admin (2019)</span></div>
+            <div class="edu-item"><span>📖 ICD-10-CM Medical Coding Certificate</span><span>SCFHS (2016)</span></div>
+            <div class="edu-item"><span>⚙️ NPHIES Advanced User Certification</span><span>NPHIES / CCHI (2022)</span></div>
         </div>
 
         <!-- LANGUAGES -->
@@ -467,8 +556,8 @@
             <div class="section-title"><span></span> Languages</div>
             <div class="lang-row">
                 <div class="lang-item">🇵🇭 Tagalog · Native</div>
-                <div class="lang-item">🇬🇧 English · Fluent (medical/business)</div>
-                <div class="lang-item">🇸🇦 Arabic · Speaking only</div>
+                <div class="lang-item">🇬🇧 English · Fluent (written & spoken)</div>
+                <div class="lang-item">🇸🇦 Arabic · Professional (written & spoken)</div>
             </div>
         </div>
 
